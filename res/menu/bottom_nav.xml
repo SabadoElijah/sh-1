@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--    home-->
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="DASHBOARD"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/outline_home_24"/>
+
+<!--    <item-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:title="LIGHT"-->
+<!--        android:id="@+id/setLight"-->
+<!--        android:icon="@drawable/baseline_light_mode_24"/>-->
+    <!--    analytics-->
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="DATA"
+        android:id="@+id/data"
+        android:icon="@drawable/outline_dark_mode_24"/>
+    <!--    alarm-->
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="ALARM"
+        android:id="@+id/alarm"
+        android:icon="@drawable/outline_access_time_24"/>
+
+    <!--    lamp settings-->
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="FEATURES"
+        android:id="@+id/settings"
+        android:icon="@drawable/outline_library_books_24"/>
+    <!--    account profile-->
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="ACCOUNT"
+        android:id="@+id/account"
+        android:icon="@drawable/outline_person_24"/>
+</menu>

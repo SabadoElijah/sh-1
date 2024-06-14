@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayoutLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FEF7FF"
+    tools:context=".LightFragment"
+    android:fillViewport="true"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/lightUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Light Up!"
+        android:textColor="@color/purple"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lightFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Choose your light color"
+        android:textColor="@color/lavender"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/lampImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/defaultlamp" /> <!-- Default image, replace with your lamp off drawable -->
+
+    </FrameLayout>
+
+    <!-- New Row for All Four Lights -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <!-- Red Light -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="16dp">
+            <View
+                android:id="@+id/redLight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/redlight"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruby"
+                android:textColor="@color/redy"/>
+        </LinearLayout>
+
+        <!-- Orange Light -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="16dp">
+            <View
+                android:id="@+id/orangeLight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/orangelight"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pumpkin"
+                android:textColor="@color/orangey"/>
+        </LinearLayout>
+
+        <!-- Yellow Light -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="16dp">
+            <View
+                android:id="@+id/yellowLight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/yellowlight"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lemon"
+                android:textColor="@color/yellowy"/>
+        </LinearLayout>
+
+        <!-- White Light -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="16dp">
+            <View
+                android:id="@+id/whiteLight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whitelight"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pearl"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/lightOffButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Turn Off"
+            android:layout_marginStart="150dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedd" />
+
+        <View
+            android:id="@+id/auraDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Data">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Layout for Person State TextView -->
+        <RelativeLayout
+            android:id="@+id/stateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/sleepData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sleep Data"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#4D0659"
+                android:layout_marginTop="20dp"/>
+
+            <!-- TextView for displaying person state -->
+            <TextView
+                android:id="@+id/personState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sleepData"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:text="Awake or Asleep State"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/buwan"
+                android:drawablePadding="10dp"/>
+        </RelativeLayout>
+
+        <!-- Layout for Raw Data TextView -->
+        <RelativeLayout
+            android:id="@+id/rawDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stateLayout"
+            android:layout_marginTop="0dp">
+
+            <!-- TextView for displaying raw data -->
+            <TextView
+                android:id="@+id/rawData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:text="Raw Data"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/puso"
+                android:drawablePadding="10dp"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp">
+
+        <TextView
+            android:id="@+id/heartRateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Heart Rate"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_marginTop="20dp"/>
+
+    <!-- LineChart view -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/dataround"
+            />
+
+        <TextView
+            android:id="@+id/SleepOnsetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Sleep Onset"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_marginTop="443dp"/>
+
+        <!-- bottom linechart -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/line_chart"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/dataround"
+            android:layout_marginTop="73dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Sleep Logs"
+            android:id="@+id/btnSleepLogs"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius="20dp"
+            android:layout_below="@id/line_chart2"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

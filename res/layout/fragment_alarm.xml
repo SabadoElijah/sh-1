@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alarm">
+
+    <!-- TextView to display the alarm time -->
+    <TextView
+        android:id="@+id/TimeSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set an alarm"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <!-- Button to set the alarm -->
+    <Button
+        android:id="@+id/setAlarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET ALARM"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <!-- ImageView for alarm clock image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarmclock"
+        android:layout_marginTop="170dp"
+        android:layout_gravity="center"/>
+
+    <!-- Button to stop the alarm -->
+    <Button
+        android:id="@+id/stopAlarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP ALARM"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="50dp"/>
+
+</FrameLayout>

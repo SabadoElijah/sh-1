@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:text="Hi, sleep buddy!"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#4D0659"
+            android:layout_gravity="start"/>
+
+        <RelativeLayout
+            android:id="@+id/backgroundLayout"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textdefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/linearLayout"
+                android:textSize="8sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/imagedefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textViewMessage"
+                android:layout_marginTop="55dp" />
+
+            <TextView
+                android:id="@+id/textViewQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:text="How are you feeling today?"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="-2dp"
+                android:layout_marginEnd="2dp"
+                android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/buttonSleepy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@null"
+                android:contentDescription="@string/sleepy"
+                android:src="@drawable/sleepy" />
+
+            <ImageButton
+                android:id="@+id/buttonRelaxed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/relaxed"
+                android:src="@drawable/relaxed" />
+
+            <ImageButton
+                android:id="@+id/buttonAnxious"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/anxious"
+                android:src="@drawable/anxious" />
+
+            <ImageButton
+                android:id="@+id/buttonExcited"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/excited"
+                android:src="@drawable/excited" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linearLayout"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageViewMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewMessage"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Features"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center">
+
+            <!-- First Container -->
+            <RelativeLayout
+                android:id="@+id/backgroundLayout1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounds"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/heartrate" />
+
+                <TextView
+                    android:id="@+id/Hearttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Heart Rate"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"/>
+
+                <TextView
+                    android:id="@+id/Heartsub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Hearttitle"
+                    android:layout_alignStart="@id/Hearttitle"
+                    android:text="Sensor is off"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/backgroundLayout2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounds"
+                android:layout_marginStart="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/musicnote" />
+
+                <TextView
+                    android:id="@+id/Musictitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Music"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"/>
+
+                <TextView
+                    android:id="@+id/MusicSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Musictitle"
+                    android:layout_alignStart="@id/Musictitle"
+                    android:text="Music is off"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center">
+
+            <!-- Third Container -->
+            <RelativeLayout
+                android:id="@+id/backgroundLayout3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounds"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/lightbulb" />
+
+                <TextView
+                    android:id="@+id/Lighttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"/>
+
+                <TextView
+                    android:id="@+id/Lightsub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Lighttitle"
+                    android:layout_alignStart="@id/Lighttitle"
+                    android:text="Light is off"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/backgroundLayout4"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounds"
+                android:layout_marginStart="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/lavender" />
+
+                <TextView
+                    android:id="@+id/Scenttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Humidifier"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"/>
+
+                <TextView
+                    android:id="@+id/Scentsub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Scenttitle"
+                    android:layout_alignStart="@id/Scenttitle"
+                    android:text="Humidifier is off"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:text="Sleep Guide"
+            android:textSize="18sp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounds"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artone" />
+
+            <TextView
+                android:id="@+id/textViewQuickTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/lavender"
+                android:text="Better Sleep Tonight: 5 Quick Tips" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounds"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arttwo" />
+            <TextView
+                android:id="@+id/MusicandLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/lavender"
+                android:text="Enhancing Sleep with Music and Light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounds"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artthree" />
+            <TextView
+                android:id="@+id/Productivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/lavender"
+                android:text="Napping for Productivity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounds"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artfour" />
+            <TextView
+                android:id="@+id/Myths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/lavender"
+                android:text="Sleep Myths Debunked" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

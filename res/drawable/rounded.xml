@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer -->
+    <item>
+        <shape>
+            <solid android:color="#EE82EE"/> <!-- Violet color for the shadow -->
+            <corners android:radius="52dp"/> <!-- Slightly larger radius for the shadow -->
+            <padding
+                android:bottom="2dp"
+                android:right="1dp"
+                android:left="-2dp"
+                android:top="-2dp"/>
+        </shape>
+    </item>
+
+    <!-- Foreground Layer -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF"/> <!-- Your preferred color for the shape -->
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+</layer-list>
